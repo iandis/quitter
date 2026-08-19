@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: FlatButton(child: Text('Press to quit'), onPressed: () {
+          child: ElevatedButton(child: Text('Press to quit'), onPressed: () {
             Quitter.quitApplication();
           },),
         ),
