@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class SwiftQuitterPlugin: NSObject, FlutterPlugin {
+public class QuitterPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "quitter", binaryMessenger: registrar.messenger())
-    let instance = SwiftQuitterPlugin()
+    let instance = QuitterPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
